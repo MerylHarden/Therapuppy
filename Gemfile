@@ -30,18 +30,16 @@ gem 'httparty'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 ruby '2.1.5'
 
+gem 'pg',             '0.17.1'
+
 group :production do
-
-  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2', group: :production
-
-
 end
 
 group :development, :test do
